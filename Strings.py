@@ -49,3 +49,35 @@ print(my_string1[0:14]) # 'I like Python!'
 print(my_string1[0:-5]) # 'I like Py'
 print(my_string1[:])    # 'I like Python!'
 print(my_string1[2:])   # 'like Python!'
+
+
+
+#old way of substituting strings
+my_string = "I like %s" % "Python"
+print(my_string) # 'I like Python'
+
+var = "cookies"
+newString = "I like %s" % var
+print(newString) # 'I like cookies'
+
+another_string = "I like %s and %s" % ("Python", var)
+print(another_string)  # 'I like Python and cookies'
+
+my_string = "%i + %i = %i" % (1,2,3)
+print(my_string) # '1 + 2 = 3'
+
+float_string = "%f" % (1.23)
+print(float_string) # '1.230000'
+
+float_string2 = "%.2f" % (1.23)
+print(float_string2) # '1.23'
+
+float_string3 = "%.2f" % (1.237)
+print(float_string3) # '1.24'
+
+
+#new way of subtstituting strings
+print("%(value)s %(value)s %(value)s" % {"value":"spam"})
+
+
+print("Python is as simple as {0}, {1}, {2}".format("a", "b", "c"))
